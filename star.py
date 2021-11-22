@@ -421,3 +421,118 @@ def invert_left_triangle(n):
         print()
         i = i + 1
         space = space - 1
+
+
+
+
+
+def number_pyramid_equivalent(n):
+    #n = 4
+    i = 1
+    space = n - i
+    while i<=n:
+        j = 1
+        print(" "*space,end = "")
+        while j<=i:
+            print(j,end = "")
+            j = j + 1
+        j = i
+        while j!=1:
+            j = j - 1
+            print(j,end = "")
+        print()
+        i = i + 1
+        space = space - 1
+
+
+
+
+'''
+n = 5
+while n>=1:
+    i = 1
+    while i<=n:
+        print(i,end = "")
+        i = i + 1
+    print()
+    n = n - 1
+'''
+'''
+n = 4
+i = 1
+while i<=n:
+    space = n - i
+    print(" "*space,end = "")
+    print(i*"**")
+    i = i + 1
+'''
+
+
+'''
+n = 5
+space = 0
+while n>=1:
+    print(" "*space,end = "")
+    i = n
+    while i>=1:
+        print(i,end = "")
+        i = i - 1
+    space = space + 1
+    print()
+    n = n - 1
+'''
+
+
+def final_pattern_number(n):
+    #n = 5
+    i = n
+    while i>=1:
+        j = 1
+        while j<=i:
+            print(j,end = "")
+            j = j + 1
+        space = 2*n - 2*i
+        print("*"*space,end = "")
+        j = i
+        while j>0:
+            print(j,end = "")
+            j = j - 1
+        print()
+        i = i - 1
+
+def continous_left_pyramid_number(n):
+    #n = 20
+    s = 1
+    i = 1
+    while i<=n:
+        j = 1
+        while j<=i:
+            print(s,end = " ")
+            s = s + 1
+            j = j + 1
+        print()
+        i = i + 1
+
+
+
+def number_triangle_pattern_two_side(n):
+    #n = 4
+    space = n - 1
+    i = 1
+    while i<=n:
+        j = i
+        print(" "*space,end = "")
+        while j>=1:
+            print(j,end = "")
+            j = j - 1
+
+        j = 2
+        while j<=i:
+            print(j,end = "")
+            j = j + 1
+            
+        print()
+        space = space - 1
+        i = i + 1
+
+
